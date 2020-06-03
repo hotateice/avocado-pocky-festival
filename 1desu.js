@@ -30,8 +30,10 @@ window.onload = ()=>{
 		ctx2.drawImage(hoya1,7,100);
 	}
 
-	document.getElementById("canvas2").onclick = function(){
-		ctx2.drawImage(hoya1,100,100);
+	document.getElementById("canvas2").onclick = function(event){
+		var x = event.pageX
+		var y = event.pageY
+		ctx2.drawImage(hoya1,x,y);
 	
 	}
 
