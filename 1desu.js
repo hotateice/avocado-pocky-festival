@@ -1,12 +1,8 @@
 window.onload = ()=>{
-	const canvas = document.getElementById("canvas");
+	const canvas = document.getElementById("canvas1");
 	const ctx = canvas.getContext("2d");
 
-	const hoya1 = new Image();
-	hoya1.src ="img/po_5.png";
-	hoya1.onload =()=>{
-		ctx.drawImage(hoya1,7,100);
-	}
+	
 
 	const avo = new Image();
 	avo.src ="img/avo.png";
@@ -25,4 +21,15 @@ window.onload = ()=>{
 		ctx.fillText(word[random]+'くれ',330,130);
 
 	}	
+	const canvas2 = document.getElementById("canvas2");
+	const ctx2 = canvas2.getContext("2d");
+
+	const hoya1 = new Image();
+	hoya1.src ="img/po_5.png";
+	hoya1.onload =()=>{
+		ctx2.drawImage(hoya1,7,100);
+	}
+
+
+
 };		

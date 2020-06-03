@@ -5,14 +5,36 @@
 		<title>wagaavo</title>
 
 		<style>
-			#canvas{
+			#canvas1{
 				background: #E6E6FA;
 			}
+			#canvas2{
+				background-color: transparent;
+			}
+			#kouzyou{
+				width: 640px;
+				height: 480px;
+				position: relative;
+			}
+
+			canvas{
+				position: absolute;
+			}
+			#canvas1{
+				z-index: 1;
+			}
+			#canvas2{
+				z-index: 2;
+			}
+
 		</style>
 	</head>
 	<body>
+		<div id="kouzyou">
+			<canvas id="canvas1" width="640" height="480"></canvas>
+			<canvas id="canvas2" width="640" height="480"></canvas>
+		</div>
 
-		<canvas id="canvas" width="640" height="480"></canvas>
 		<script src="1desu.js"></script>
 		<p>Hoyamarumi</p>
 	</body>
