@@ -25,11 +25,14 @@ window.onload = ()=>{
 	const ctx2 = canvas2.getContext("2d");
 
 	const hoya1 = new Image();
-	hoya1.src ="img/po_5.png";
+	hoya1.src ="img/po_4.png";
 	hoya1.onload =()=>{
 		ctx2.drawImage(hoya1,7,100);
 	}
 
-
+	document.getElementById("canvas2").onclick = function(){
+		ctx2.drawImage(hoya1,100,100);
+	
+	}
 
 };		
